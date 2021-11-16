@@ -1,0 +1,25 @@
+<div class="container mt-4">
+  <h1>Angular 13</h1>
+  <h2>Programmation d'un menu déroulant avec le module ng-select (T02)</h2>
+  <div class="note01">
+    <p>Paquets NPM à installer :</p>
+    <pre>npm install bootstrap</pre>
+    <pre>npm install @ng-select/ng-select</pre>
+    <pre>npm install @ng-select/ng-option-highlight</pre>
+  </div>
+  <div></div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <ng-select [items]="defaultBindingsList" [(ngModel)]="selectedCity"></ng-select>
+      <code>
+        selectedCity -- {{ selectedCity }}<br>
+        selectedCity | json -- {{ selectedCity | json }}<br>
+        selectedCity.value -- {{ selectedCity.value }}<br>
+        selectedCity.label -- {{ selectedCity.label }}
+      </code>
+    </div>
+    <div class="col-md-6"></div>
+  </div>
+
+</div>
