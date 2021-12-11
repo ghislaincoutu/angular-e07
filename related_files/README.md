@@ -1,5 +1,8 @@
 # angular-e07 &mdash; Programmation de menus déroulants avec le module ng-select
 
+## Démonstration
+https://ghislaincoutu.ca/r002/angular-e07
+
 ## Paquets NPM à installer
 - npm install bootstrap
 - npm install @ng-select/ng-select
