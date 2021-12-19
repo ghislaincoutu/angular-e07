@@ -8,7 +8,7 @@ https://ghislaincoutu.ca/r002/angular-e07
 - npm install @ng-select/ng-select
 - npm install @ng-select/ng-option-highlight
 
-## Commandes Angular pour générer les composants de l'exercice
+## Commandes Angular à exécuter pour générer les composants de l'exercice
 - ng generate component menu
 - ng generate component t01
 - ng generate component t02
