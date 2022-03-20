@@ -12,4 +12,7 @@ https://ghislaincoutu.ca/r002/angular-e07
 - ng generate component menu
 - ng generate component t01
 - ng generate component t02
+- ng generate component t03
+- ng generate component t04
 - ng generate service module01
+- ng generate service module02
