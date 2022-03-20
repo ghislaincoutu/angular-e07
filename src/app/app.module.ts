@@ -11,13 +11,17 @@ import { NgOptionHighlightModule } from '@ng-select/ng-option-highlight';
 import { MenuComponent } from './menu/menu.component';
 import { T01Component } from './t01/t01.component';
 import { T02Component } from './t02/t02.component';
+import { T03Component } from './t03/t03.component';
+import { T04Component } from './t04/t04.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     T01Component,
-    T02Component
+    T02Component,
+    T03Component,
+    T04Component
   ],
   imports: [
     BrowserModule,

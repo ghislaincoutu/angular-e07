@@ -12,10 +12,10 @@ export class T01Component implements OnInit {
   people$!: Observable<Person[]>;
   selectedPersonId = '5a15b13c36e7a7f00cf0d7cb';
 
-  constructor(private module01: Module01Service) { }
+  constructor(private m01: Module01Service) { }
 
   ngOnInit(): void {
-    this.people$ = this.module01.getPeople();
+    this.people$ = this.m01.getPeople();
   }
 
 }
