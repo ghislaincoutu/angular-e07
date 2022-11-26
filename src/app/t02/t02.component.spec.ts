@@ -11,9 +11,7 @@ describe('T02Component', () => {
       declarations: [ T02Component ]
     })
     .compileComponents();
-  });
 
-  beforeEach(() => {
     fixture = TestBed.createComponent(T02Component);
     component = fixture.componentInstance;
     fixture.detectChanges();

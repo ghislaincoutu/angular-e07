@@ -6,7 +6,6 @@ import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgSelectModule } from '@ng-select/ng-select';
-import { NgOptionHighlightModule } from '@ng-select/ng-option-highlight';
 
 import { MenuComponent } from './menu/menu.component';
 import { T01Component } from './t01/t01.component';
@@ -29,9 +28,8 @@ import { T04Component } from './t04/t04.component';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    NgSelectModule,
-    NgOptionHighlightModule,
-    CommonModule
+    CommonModule,
+    NgSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

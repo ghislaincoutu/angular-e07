@@ -4,15 +4,18 @@
 https://ghislaincoutu.ca/r002/angular-e07
 
 ## Paquets NPM à installer
-- npm install bootstrap
-- npm install @ng-select/ng-select
-- npm install @ng-select/ng-option-highlight
+```
+npm install bootstrap
+npm install @ng-select/ng-select
+```
 
 ## Commandes Angular à exécuter pour générer les composants de l'exercice
-- ng generate component menu
-- ng generate component t01
-- ng generate component t02
-- ng generate component t03
-- ng generate component t04
-- ng generate service module01
-- ng generate service module02
+```
+ng generate component menu
+ng generate component t01
+ng generate component t02
+ng generate component t03
+ng generate component t04
+ng generate service module01
+ng generate service module02
+```
