@@ -19,3 +19,20 @@ ng generate component t04
 ng generate service module01
 ng generate service module02
 ```
+
+## Ajout des fichiers Boostrap au projet Angular
+Pour que les fichiers Bootstrap soient pris en compte dans le projet, il faut ajouter les fichiers CSS et JavaScript dans le fichier **angular.json**, dans la section _build_ :
+```
+"build": {
+  ...
+    "styles": [
+      "node_modules/bootstrap/dist/css/bootstrap.css",
+      "src/styles.scss"
+    ],
+    "scripts": [
+      "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+    ]
+  ...
+  },
+}
+```
