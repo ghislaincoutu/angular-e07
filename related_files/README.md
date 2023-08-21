@@ -1,4 +1,5 @@
 # angular-e07 &mdash; Programmation de menus déroulants avec le module ng-select
+[README](../README.md)
 
 ## Démonstration
 https://ghislaincoutu.ca/r002/angular-e07
