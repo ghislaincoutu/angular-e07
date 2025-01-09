@@ -54,7 +54,7 @@ Dans le fichier **angular.json** il faut ajouter le paramètre _optimization_ et
       {
         "type": "initial",
         "maximumWarning": "800kB",
-        "maximumError": "1MB"
+        "maximumError": "1.2MB"
       },
       {
         "type": "anyComponentStyle",

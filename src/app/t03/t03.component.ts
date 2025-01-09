@@ -2,9 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { Module02Service } from '../module02.service';
 
 @Component({
-  selector: 'app-t03',
-  templateUrl: './t03.component.html',
-  styleUrls: ['./t03.component.scss']
+    selector: 'app-t03',
+    templateUrl: './t03.component.html',
+    styleUrls: ['./t03.component.scss'],
+    standalone: false
 })
 export class T03Component implements OnInit {
   constructor(public m02: Module02Service) { }
