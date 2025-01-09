@@ -3,9 +3,10 @@ import { Module01Service, Person } from '../module01.service';
 import { Observable } from 'rxjs';
 
 @Component({
-  selector: 'app-t01',
-  templateUrl: './t01.component.html',
-  styleUrls: ['./t01.component.scss']
+    selector: 'app-t01',
+    templateUrl: './t01.component.html',
+    styleUrls: ['./t01.component.scss'],
+    standalone: false
 })
 export class T01Component implements OnInit {
 
