@@ -1,60 +1,72 @@
-# angular-e07
-[README](related_files/README.md) &mdash; Other files related to this programming exercise.
+# angular-e07 &mdash; Programmation de menus déroulants avec le module ng-select
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.16.
+## Démonstration
+https://ghislaincoutu.ca/d002/angular-e07
 
-## Development server
-
-To start a local development server, run:
-
-```bash
-ng serve
+## Paquets NPM à installer
+```sh
+npm install bootstrap
+npm install @ng-select/ng-select
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+## Commandes Angular à exécuter pour générer les composants de l'exercice
+```sh
+ng generate component menu
+ng generate component t01
+ng generate component t02
+ng generate component t03
+ng generate component t04
+ng generate service module01
+ng generate service module02
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
+## Ajout des fichiers Boostrap au projet Angular
+Pour que les fichiers Bootstrap soient pris en compte dans le projet, il faut ajouter les fichiers CSS et JavaScript dans le fichier **angular.json**, dans la section _build_ :
+```json
+{
+  "build": {
+    "styles": [
+      "node_modules/bootstrap/dist/css/bootstrap.css",
+      "src/styles.scss"
+    ],
+    "scripts": [
+      "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+    ]
+  }
+}
 ```
 
-## Building
-
-To build the project run:
-
-```bash
-ng build
+## Ajout de paramètres dans le fichier angular.json
+Dans le fichier **angular.json** il faut ajouter le paramètre _optimization_ et augmenter les valeurs dans le paramètre _budgets_.
+```json
+"configurations": {
+  "production": {
+    "optimization": {
+      "scripts": true,
+      "styles": {
+        "minify": true,
+        "inlineCritical": false
+      },
+      "fonts": true
+    },
+    "budgets": [
+      {
+        "type": "initial",
+        "maximumWarning": "800kB",
+        "maximumError": "1.2MB"
+      },
+      {
+        "type": "anyComponentStyle",
+        "maximumWarning": "4kB",
+        "maximumError": "8kB"
+      }
+    ],
+    "outputHashing": "all"
+  },
+  "development": {
+    "optimization": false,
+    "extractLicenses": false,
+    "sourceMap": true
+  }
+},
 ```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
